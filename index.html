@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="content-container">
+                <div class="logos">
+                    <img src="/img/pup-logo.png" alt="PUP Logo" class="logo">
+                    <img src="/img/ccis-logo.png" alt="CCIS Logo" class="logo">
+                </div>
+                <h1 class="hub-title">CCIS Concerns Hub</h1>
+                <p class="sub-text">Your platform for raising concerns and inquiries.</p>
+
+                <!-- Disclaimer Section -->
+                <div class="disclaimer">
+                    <p>Disclaimer: This is just a project for the Odin Project and has no affiliation with the university.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="form-container">
+                <form class="registration-form">
+                    <div class="instructions">
+                        <div class="instructions-title">Create an Account</div>
+                        <div class="instructions-subtext">Fill up the necessary details below:</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content: space-between;"> <!-- Flex for side by side -->
+                        <div style="flex: 1; margin-right: 10px;">
+                            <label for="middle-name">Middle Name</label>
+                            <input type="text" id="middle-name" name="middle-name">
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-number">Student Number *</label>
+                        <input type="text" id="student-number" name="student-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department *</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select your department</option>
+                            <option value="bscs">Bachelor of Science in Computer Science</option>
+                            <option value="bsit">Bachelor of Science in Information Technology</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
